@@ -49,9 +49,6 @@ box-shadow: 1px 1px 1px gray;
 .sec_b{    
     display: grid;
     grid-template-columns: repeat(3, 1fr);    
-    /* grid-column-gap: 30px;
-    margin: 0 50px;
-    justify-content: center; */
     justify-items: center;
     grid-row-gap: 30px;
 }
@@ -71,11 +68,26 @@ box-shadow: 1px 1px 1px gray;
 /* section c ------------ */
 
 .address{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);  
-    justify-items: center;
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+}
 
+.address img{
+    width: 100%;
+}
+
+.address a{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: tomato;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+.address a:hover{    
+background-color: rgb(255, 112, 86);
+box-shadow: 1px 1px 10px gray;
 }
 
 /* footer  */
@@ -108,26 +120,51 @@ footer p{
 
 
 /* Media Queries------------------- */
+
 /* Mobile---------- */
 @media only screen and (max-width:688px) {
     
+    /* One--------------  */
 
-    /* b  */
-    .sec_b{
-        grid-template-columns: repeat(1, 1fr);    
-        /* grid-column-gap: 30px;
-        grid-row-gap: 30px;
-        margin: 0 50px;
-        justify-content: center; */
+    .site_title h1{
+        text-align: center;
     }
-    .part_b{
-        border-radius: 5px;    
-        background-color: rgb(236, 232, 232);
-        box-shadow: 1px 1px 1px gray;
-        padding: 20px;
+    .sec_a{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .article_a{
+       display: flex;
+       flex-direction: column;
     }
 
+    .article_a h1, p{
+        text-align: center;
+     }
 
+     .article_a a{
+         text-align: center;
+         transition: 0.5s;
+     }
+     
+     .article_a a:hover{
+         
+    }
+/* Two -------------- */
+
+.sec_b{    
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 30px;
+}
+
+/* Three ------------- */
+.address{
+    flex-direction: column;
+}
+
+.div_a{
+    margin-top: 100px;
+    margin-bottom: 100px
 }
 
 
