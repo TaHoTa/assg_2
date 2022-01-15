@@ -1,5 +1,143 @@
 body{
     font-family: 'Exo', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
+/* section 1  */
+.site_title{
+    margin-left: 7%;
+}
+.sec_a{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.article_a{
+    margin: 30px;
+    width: 70%;
+}
+.part_title_a{
+    font-size: 28px;
+}
+
+.article_a p{
+    margin: 40px 0;
+}
+.article_a a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: tomato;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.article_a a:hover{
+background-color: rgb(226, 57, 27);
+box-shadow: 1px 1px 1px gray;
+}
+
+
+/* second section    */
+
+.part_title_b{
+    text-align: center;
+}
+
+.sec_b{    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    /* grid-column-gap: 30px;
+    margin: 0 50px;
+    justify-content: center; */
+    justify-items: center;
+    grid-row-gap: 30px;
+}
+.part_b{
+    border-radius: 5px;    
+    padding: 20px;
+    box-shadow: 2px 2px 15px rgb(214, 214, 214);    
+    transition: 0.3s;
+}
+
+.part_b:hover{
+    box-shadow: 3px 3px 10px gray;    
+}
+.rating{
+    color: gold;
+}
+/* section c ------------ */
+
+.address{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    justify-items: center;
+    align-items: center;
+
+}
+
+/* footer  */
+footer{
+    background-color: black;
+    padding: 20PX 0;
+display: flex;
+flex-direction: column;
+}
+
+footer h1{
+    color: white;  
+    text-align: center;
+}
+footer p{
+    color: white;    
+ text-align: center; 
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    
+}
+.fab{
+ color: white;   
+ text-decoration: none;
+ padding: 10px;
+}
+
+
+/* Media Queries------------------- */
+/* Mobile---------- */
+@media only screen and (max-width:688px) {
+    
+
+    /* b  */
+    .sec_b{
+        grid-template-columns: repeat(1, 1fr);    
+        /* grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin: 0 50px;
+        justify-content: center; */
+    }
+    .part_b{
+        border-radius: 5px;    
+        background-color: rgb(236, 232, 232);
+        box-shadow: 1px 1px 1px gray;
+        padding: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+/* Tablet --------------- */
+@media only screen and (min-width: 688px ) and (max-width:992px) {
+
+
+
+    }
