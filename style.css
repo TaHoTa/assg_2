@@ -38,8 +38,8 @@ body{
     transition: 0.5s;
 }
 .article_a a:hover{
-background-color: rgb(228, 62, 32);
-box-shadow: 2px 2px 10px rgb(177, 169, 169);
+    background-color: rgb(228, 62, 32);
+    box-shadow: 2px 2px 10px rgb(177, 169, 169);
 }
 .part_image{    
     flex: 50%;
@@ -106,14 +106,14 @@ box-shadow: 2px 2px 10px rgb(177, 169, 169);
     box-shadow: 5px 5px 15px lightgray;
 }
 .team img{
-        border-radius: 150px;        
-        transition: transform .2s; /* Animation */
+    border-radius: 150px;        
+    transition: transform .2s; /* Animation */
 }
 
 .team:hover img{    
-  transform: scale(1.05);
-  overflow: hidden;
-  position:sticky;
+    transform: scale(1.05);
+    overflow: hidden;
+    position:sticky;
 }
 .team p{
     text-align: center;
@@ -134,7 +134,7 @@ footer h1{
 }
 footer p{
     color: white;    
- text-align: center; 
+    text-align : center; 
 }
 
 .social{
@@ -144,9 +144,9 @@ footer p{
     
 }
 .fab{
- color: white;   
- text-decoration: none;
- padding: 10px;
+    color: white;   
+    text-decoration: none;
+    padding: 10px;
 }
 
 
@@ -244,9 +244,9 @@ footer p{
     text-align: center;
  }
 
- .article_a a{
-     text-align: center;
-     width: 40%;
+.article_a a{
+    text-align: center;
+    width: 40%;
  }
  .part_image{    
     order: 1;
@@ -258,6 +258,8 @@ footer p{
     justify-items: center;
     grid-row-gap: 30px;
 }
+
+
 /* Three ------------- */
 
 
@@ -269,8 +271,7 @@ footer p{
     flex-wrap: wrap;
 }
 
-.team{
-    
+.team{    
     width: 35%;
     height: auto;
     margin-bottom: 40px;
