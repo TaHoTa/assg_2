@@ -13,10 +13,13 @@ body{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .article_a{
     margin: 30px;
+    flex: 50%;
     width: 70%;
 }
 .part_title_a{
@@ -35,15 +38,23 @@ body{
     transition: 0.5s;
 }
 .article_a a:hover{
-background-color: rgb(226, 57, 27);
-box-shadow: 1px 1px 1px gray;
+background-color: rgb(228, 62, 32);
+box-shadow: 2px 2px 10px rgb(177, 169, 169);
 }
-
+.part_image{    
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+}
 
 /* second section    */
 
 .part_title_b{
     text-align: center;
+}
+.part_title_b h1{
+    font-size: 30px;
+    margin: 60px 0;
 }
 
 .sec_b{    
@@ -62,40 +73,49 @@ box-shadow: 1px 1px 1px gray;
 .part_b:hover{
     box-shadow: 3px 3px 10px gray;    
 }
+.title_b{
+    color: tomato;
+    font-size: 25px;
+    margin-bottom: 0;
+}
 .rating{
     color: gold;
 }
 /* section c ------------ */
-
-.address{
+.sec_c{
+    margin: 200px 0;
+}
+.teams{  
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
 }
 
-.address img{
-    width: 100%;
+.team{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px lightgray;
 }
-
-.address a{
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-    background-color: tomato;
-    padding: 20px 40px;
-    border-radius: 50px;
+.team img{
+        border-radius: 150px;
 }
-.address a:hover{    
-background-color: rgb(255, 112, 86);
-box-shadow: 1px 1px 10px gray;
+.team p{
+    text-align: center;
+    padding: 0 30px;
 }
 
 /* footer  */
 footer{
     background-color: black;
-    padding: 20PX 0;
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 footer h1{
@@ -110,6 +130,7 @@ footer p{
 .social{
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
     
 }
 .fab{
@@ -125,7 +146,9 @@ footer p{
 @media only screen and (max-width:688px) {
     
     /* One--------------  */
-
+    .site_title{
+        margin-left: 0%;
+    }
     .site_title h1{
         text-align: center;
     }
@@ -146,9 +169,7 @@ footer p{
          transition: 0.5s;
      }
      
-     .article_a a:hover{
-         
-    }
+  
 /* Two -------------- */
 
 .sec_b{    
@@ -158,23 +179,30 @@ footer p{
 }
 
 /* Three ------------- */
-.address{
+
+
+.sec_c{
+    margin: 150px 0 50px 0;
+}
+.teams{  
+    display: flex;    
     flex-direction: column;
 }
 
-.div_a{
-    margin-top: 100px;
-    margin-bottom: 100px
+.team{
+    
+    width: 80%;
+    height: auto;
 }
-
-
-
 
 
 
 /* Tablet --------------- */
-@media only screen and (min-width: 688px ) and (max-width:992px) {
+@media only screen and (min-width: 688px) and (max-width:992px) {
 
-
+body{
+    background-color: tomato;
+    font-family: cursive;
+    }
 
     }
