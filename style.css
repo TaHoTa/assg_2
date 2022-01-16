@@ -191,8 +191,13 @@ footer p{
 
 .team{
     
-    width: 80%;
+    width: 65%;
     height: auto;
+    margin-bottom: 40px;
+}
+
+.team img{
+    width: 100%;
 }
 
 
