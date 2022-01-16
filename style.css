@@ -199,15 +199,63 @@ footer p{
 .team img{
     width: 100%;
 }
-
+}
 
 
 /* Tablet --------------- */
 @media only screen and (min-width: 688px) and (max-width:992px) {
 
-body{
-    background-color: tomato;
-    font-family: cursive;
-    }
 
+/* One--------------  */
+.site_title{
+    margin-left: 0%;
+}
+.site_title h1{
+    text-align: center;
+}
+.sec_a{
+    grid-template-columns: repeat(1, 1fr);
+}
+.article_a{
+   display: flex;
+   flex-direction: column;
+}
+
+.article_a h1, p{
+    text-align: center;
+ }
+
+ .article_a a{
+     text-align: center;
+     transition: 0.5s;
+     width: 50%;
+ }
+/* Two -------------- */
+
+.sec_b{    
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-row-gap: 30px;
+}
+/* Three ------------- */
+
+
+.sec_c{
+    margin: 150px 0 50px 0;
+}
+.teams{  
+    display: flex;    
+    flex-wrap: wrap;
+}
+
+.team{
+    
+    width: 35%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.team img{
+    width: 100%;
+}
     }
